@@ -1,0 +1,7 @@
+{% block Contents %}
+{% for post in object_list %}
+<h5>{{post.date|date:"Y-m-d" }} by {{post.author}}  <a href="{{post.id}}">{{post.title}}</a></h5>
+
+
+{% endfor %}
+{% endblock %}
